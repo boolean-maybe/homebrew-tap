@@ -5,21 +5,21 @@
 class Tiki < Formula
   desc "Terminal-based kanban/scrum board application"
   homepage "https://github.com/boolean-maybe/tiki"
-  version "0.1.0"
+  version "0.1.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/boolean-maybe/tiki/releases/download/v0.1.0/tiki_0.1.0_darwin_amd64.tar.gz"
-      sha256 "b699c97066e032004dd32ae6d129f9ac6270511b4efdede1446833f6547da448"
+      url "https://github.com/boolean-maybe/tiki/releases/download/v0.1.1/tiki_0.1.1_darwin_amd64.tar.gz"
+      sha256 "03155100619145b5046f93ed71f75f9499aa1ea55daea13157e0ff355012d669"
 
       def install
         bin.install "tiki"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/boolean-maybe/tiki/releases/download/v0.1.0/tiki_0.1.0_darwin_arm64.tar.gz"
-      sha256 "d919d8bfde24a6a6e1d0938bce873b794ef275e0b835bfb7928eac0bed1d032f"
+      url "https://github.com/boolean-maybe/tiki/releases/download/v0.1.1/tiki_0.1.1_darwin_arm64.tar.gz"
+      sha256 "68d57dcefc4591a9e5ec2ddf0470fdac2ad4413bb802cd8b9146bc5a9c2d1397"
 
       def install
         bin.install "tiki"
@@ -29,15 +29,15 @@ class Tiki < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/boolean-maybe/tiki/releases/download/v0.1.0/tiki_0.1.0_linux_amd64.tar.gz"
-      sha256 "0146b7a2a3c3a7f12489f7bfc3889b624d9b15376e5d4fe54e46f9bc5d685b4c"
+      url "https://github.com/boolean-maybe/tiki/releases/download/v0.1.1/tiki_0.1.1_linux_amd64.tar.gz"
+      sha256 "109603bea4780d2c757b7c8a52de0b268cd7c5df06a6ce1d02688f46fadad6c3"
       def install
         bin.install "tiki"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/boolean-maybe/tiki/releases/download/v0.1.0/tiki_0.1.0_linux_arm64.tar.gz"
-      sha256 "2773adfd68d0cfb1bac3d35c8f7e60d2bd5e198097ad87fcad66499f8111b90e"
+      url "https://github.com/boolean-maybe/tiki/releases/download/v0.1.1/tiki_0.1.1_linux_arm64.tar.gz"
+      sha256 "ca516c8e5c662340de9334a421f5ae3b2c32ad8269f7068128398aeb0dbc81a2"
       def install
         bin.install "tiki"
       end
