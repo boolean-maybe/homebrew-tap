@@ -5,21 +5,21 @@
 class Tiki < Formula
   desc "Terminal-based kanban/scrum board application"
   homepage "https://github.com/boolean-maybe/tiki"
-  version "0.3.1"
+  version "0.3.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/boolean-maybe/tiki/releases/download/v0.3.1/tiki_0.3.1_darwin_amd64.tar.gz"
-      sha256 "8b981b956f637d16b6e8b70f94c505e14f6cd8b200ddc718911a4790e873a156"
+      url "https://github.com/boolean-maybe/tiki/releases/download/v0.3.2/tiki_0.3.2_darwin_amd64.tar.gz"
+      sha256 "0dafdc440d60d16ebfb5f5544f0332501e21efaf450aec2327d0ce7945f04798"
 
       define_method(:install) do
         bin.install "tiki"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/boolean-maybe/tiki/releases/download/v0.3.1/tiki_0.3.1_darwin_arm64.tar.gz"
-      sha256 "9dd3f1919f2a2c0d2e31b13b5aeac779fa0e71b047b8333954e315a076e4da62"
+      url "https://github.com/boolean-maybe/tiki/releases/download/v0.3.2/tiki_0.3.2_darwin_arm64.tar.gz"
+      sha256 "d6a2aa9ca6e9fbaf4f43da5dd5be601757ba553ab5035b80f7a3e11336ab073a"
 
       define_method(:install) do
         bin.install "tiki"
@@ -29,15 +29,15 @@ class Tiki < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/boolean-maybe/tiki/releases/download/v0.3.1/tiki_0.3.1_linux_amd64.tar.gz"
-      sha256 "2f9985fe3a36f5600ad45b06eb5cf4cb48dfd3b0dc0ab1c9f93a1c5858394a81"
+      url "https://github.com/boolean-maybe/tiki/releases/download/v0.3.2/tiki_0.3.2_linux_amd64.tar.gz"
+      sha256 "9273cbcd136b283af7883935512d16bda5634c532d95ab9ee2bce2c64ea6de03"
       define_method(:install) do
         bin.install "tiki"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/boolean-maybe/tiki/releases/download/v0.3.1/tiki_0.3.1_linux_arm64.tar.gz"
-      sha256 "62678846c8a0964ac5ce777c2b77687657c5a761edb49f29fa3f35ce17f09776"
+      url "https://github.com/boolean-maybe/tiki/releases/download/v0.3.2/tiki_0.3.2_linux_arm64.tar.gz"
+      sha256 "9f51671c7a656be4cc688f735059f5d852c899ebb1d3f0719973412bbcb05b87"
       define_method(:install) do
         bin.install "tiki"
       end
